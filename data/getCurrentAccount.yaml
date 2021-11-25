@@ -1,0 +1,12 @@
+-
+  #yaml格式的文件，每个-和:后面必须带空格，:必须问英文下的；注释使用#符号，-代表下面是一条测试数据
+  name: 获得当前账号信息
+  request:
+    method: get
+    url: /core/account/getCurrentAccount
+    data: None
+  #断言，此处为none
+  validate: None
+
+
+
