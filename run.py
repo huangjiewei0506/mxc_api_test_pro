@@ -12,8 +12,12 @@ import pytest
 
 if __name__ == '__main__':
     #运行指定的py文件下的所有用例，并打印信息
-    pytest.main(['-vs','./case/core/test_core.py'])
+    #pytest.main(['-vs','./case/core/test_core.py'])
 
+
+
+    #
+    pytest.main(['-v'])
 
     #运行test_core.py中TestCore类里面名字为test_core01的测试用例
     #pytest.main(['./case/core/test_core.py::TestCore::test_core01'])
