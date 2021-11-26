@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
 
 
-    #加多一行注释
+    #加多一行注释，提交到git
     pytest.main(['-v'])
 
     #运行test_core.py中TestCore类里面名字为test_core01的测试用例
