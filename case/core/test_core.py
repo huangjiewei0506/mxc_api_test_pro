@@ -1,3 +1,4 @@
+import pytest
 import requests
 from config.config import host,Cookie
 from commom.yaml_util import read_testcase
@@ -58,5 +59,7 @@ class TestCore:
         method=args[0]['request']['method']
         res = requests.request(method=method, url=url, headers=headers,data=data)
         assert res.status_code == 200
-        assert '操作成功' in res.text
+        assert '上课日期修改前后无变化' in res.text
         print(res.text)
+
+
